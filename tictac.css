@@ -9,10 +9,19 @@ button {
 	 height:100px;
   	width:100px;
     text-align: center
-
-
 }
-/*.square {
+
+.restart{
+
+  float:right;
+  position:relative;
+  width:50px;
+  height:50px;
+}
+  
+
+/*
+.square {
     float:left;
     position:relative;
     width: 20%;
@@ -28,7 +37,7 @@ button {
     height:90%; /* = 100% - 2*5% padding 
     width:90%; /* = 100% - 2*5% padding 
     padding: 5%;
-    
+    */
 }
-*/*/*/
+*/*/
 
