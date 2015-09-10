@@ -13,19 +13,23 @@
 		//if after five clicks ids A1,A2,A3, B1,B2,B3... have been chosen sotp program and alert winner 
 
 
- 
+	  $("#clearContainer").click(function(){ 
+	 	$('.button').html('	Click me!');
+	 	});
+
 
   var playerOne = true; 
 
   $(".container button ").click(function(){ 
   	 if (playerOne===true){
-  	 	$(this).html("<p> X </p>");
+  	 	$(this).html("<h1> X </h1>");
   	 	playerOne=false ;
   	 } 
   	 else { 
-  	 		  $(this).html("<p> O </p>");
+  	 		  $(this).html("<h1> O </h1>");
   	 		  playerOne=true ;
   	 } 
+
   }); 
 
 
