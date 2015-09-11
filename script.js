@@ -15,20 +15,21 @@ var visitorName = prompt("what is your name?")
 //Create READY TO PLAY BUTTON 
 
 $("#startGame").click(function(){
-	alert(+ " " + visitorName + " LEEEETS GET READY TO RUMBLEEEEEEE")
+	alert("OK"+" " + visitorName + " LEEEETS GET READY TO RUMBLEEEEEEE")
 });
 
 
 //Reset Button
  $("#clearContainer").click(function(){ 
-	 $('.button').html('Click me!');
+	 $('.button').html('');
 	 });
 
 
 //Player Alternate
   var playerOne = true; 
 
-  $(".container button ").click(function(){ 
+  $(".container button ").click(function(){
+  	buttonCount++; 
   	 if (playerOne===true){
   	 	$(this).text("X");
   	 	playerOne=false ;
@@ -39,6 +40,7 @@ $("#startGame").click(function(){
   	 } 
 
   	 determineWinner(); 
+  	 catsGame();
   }); 
 
 //Winner Determination
@@ -56,66 +58,100 @@ $("#startGame").click(function(){
   		
   		if (A1 == "X" && A2 == "X" && A3 == "X"){
 			alert("Player X Wins");
+				$('.button').html('');
+				buttonCount=0;
+
 		}
 
 		if (A1 == "O" && A2 == "O" && A3 == "O"){
 			alert("Player O Wins");
+				$('.button').html('');
+				buttonCount=0;
 		}
 
 		if (A4 == "X" && A5 == "X" && A6 == "X"){
 			alert("Player X Wins");
+				$('.button').html('');
+				buttonCount=0;
+
 		}
 
 		if (A4 == "O" && A5 == "O" && A6 == "O"){
 			alert("Player O Wins");
+				$('.button').html('');
+				buttonCount=0;
 		}
 
 		if (A7 == "X" && A8 == "X" && A9 == "X"){
 			alert("Player X Wins");
+				$('.button').html('');
+				buttonCount=0;
 		}
 
 		if (A7 == "O" && A8 == "O" && A9 == "O"){
 			alert("Player O Wins");
+				$('.button').html('');
+				buttonCount=0;
 		}
 
 		if (A1 == "X" && A4 == "X" && A7 == "X"){
 			alert("Player X Wins");
+				$('.button').html('');
+				buttonCount=0;
 		}
 
 		if (A1 == "O" && A4 == "O" && A7 == "O"){
 			alert("Player O Wins");
+				$('.button').html('');
+				buttonCount=0;
 		}
 
 		if (A2 == "X" && A5 == "X" && A8 == "X"){
 			alert("Player X Wins");
+				$('.button').html('');
+				buttonCount=0;
 		}
 
 		if (A2 == "O" && A5 == "O" && A8 == "O"){
 			alert("Player O Wins");
+				$('.button').html('');
+				buttonCount=0;
 		}
 
 		if (A3 == "X" && A6 == "X" && A9 == "X"){
 			alert("Player X Wins");
+				$('.button').html('');
+				buttonCount=0;
 		}
 
 		if (A3 == "O" && A6 == "O" && A9 == "O"){
 			alert("Player O Wins");
+				$('.button').html('');
+				buttonCount=0;
 		}
 
 		if (A1 == "X" && A5 == "X" && A9 == "X"){
 			alert("Player X Wins");
+				$('.button').html('');
+				buttonCount=0;
 		}
 
 		if (A1 == "O" && A5 == "O" && A9 == "O"){
 			alert("Player O Wins");
+				$('.button').html('');
+				buttonCount=0;
 		}
 
 		if (A3 == "X" && A5 == "X" && A7 == "X"){
 			alert("Player X Wins");
+				$('.button').html('');
+				buttonCount=0;
 		}
 
 		if (A3 == "O" && A5 == "O" && A7 == "O"){
 			alert("Player O Wins");
+				$('.button').html('');
+				buttonCount=0;
 		}
 	};
 
@@ -130,15 +166,18 @@ $("#startGame").click(function(){
 // 		(alert("Player x wins") || alert ("player o wins"))
 // 	} else { alert("This is a cats game")}
   
-// var buttonCount = 0
+var buttonCount = 0;
 
-// 	function catsGame {
+	function catsGame (){
 
-// 		if (buttonCount===9) {
+		if (buttonCount===9) {
+			alert("This is a cats game");
+			buttonCount=0;
+		} 
 
-// 			$()
-// 		}
-	
+	}
+
+
 
 
 // //   // }
