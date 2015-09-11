@@ -1,9 +1,9 @@
-/*body {
+body {
   font-family: 'Play', sans-serif;
   margin: 0px auto;
   text-align: center 
 
-}*/
+}
 
 button {
 	 height:100px;
@@ -16,26 +16,9 @@ button {
   float:right;
   position:relative;
 
-
-}
-/*
-.square {
-    float:left;
-    position:relative;
-    width: 20%;
-    padding-bottom : 20%; 
-    margin:1.66%;
-    height:40%;
-
-  
 }
 
-.content {
-    position:absolute;
-    height:90%; /* = 100% - 2*5% padding 
-    width:90%; /* = 100% - 2*5% padding 
-    padding: 5%;
-    */
-}
-*/*/
 
+table, tr, td {
+    border: 1px solid black;
+}
