@@ -1,24 +1,36 @@
 body {
   font-family: 'Play', sans-serif;
   margin: 0px auto;
-  text-align: center 
-
+  text-align: center;
+  
 }
 
 button {
-	 height:100px;
-  	width:100px;
+	 height:200px;
+  	width:200px;
     text-align: center
 }
 
-  
-.input{
-  float:right;
-  position:relative;
+container  {
+  font-size: 100%;
+
+} 
+
+input{
+ position:relative;
+    margin: 5%;  
 
 }
 
 
 table, tr, td {
     border: 1px solid black;
+}
+table {
+
+}*/*/*/
+
+.button {
+
+  font-size: 10em ;
 }

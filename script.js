@@ -1,6 +1,6 @@
-var visitorName = prompt("Howdy, welcome to lavieja, what is your name?")
-
-alert("nice to meet you" + " " + visitorName + " get ready to play some vieja with us")
+// 
+var visitorName = prompt("what is your name?")
+// alert("nice to meet you" + " " + visitorName + " get ready to play some vieja with us")
 
 
 
@@ -12,10 +12,16 @@ alert("nice to meet you" + " " + visitorName + " get ready to play some vieja wi
 		//it takes a minimum of 5 moves to win this game and a maximun, start checking combination after 5 clicks 
 		//if after five clicks ids A1,A2,A3, B1,B2,B3... have been chosen sotp program and alert winner 
 //Create a function that allows a cats game 
+//Create READY TO PLAY BUTTON 
+
+$("#startGame").click(function(){
+	alert(+ " " + visitorName + " LEEEETS GET READY TO RUMBLEEEEEEE")
+});
+
 
 //Reset Button
  $("#clearContainer").click(function(){ 
-	 $('.button').html('	Click me!');
+	 $('.button').html('Click me!');
 	 });
 
 
@@ -24,11 +30,11 @@ alert("nice to meet you" + " " + visitorName + " get ready to play some vieja wi
 
   $(".container button ").click(function(){ 
   	 if (playerOne===true){
-  	 	$(this).text("x");
+  	 	$(this).text("X");
   	 	playerOne=false ;
   	 } 
   	 else { 
-  	 		  $(this).text("o");
+  	 		  $(this).text("O");
   	 		  playerOne=true ;
   	 } 
 
@@ -48,80 +54,94 @@ alert("nice to meet you" + " " + visitorName + " get ready to play some vieja wi
   		var A9= $("#A9").text();
 
   		
-  		if (A1 == "x" && A2 == "x" && A3 == "x"){
+  		if (A1 == "X" && A2 == "X" && A3 == "X"){
 			alert("Player X Wins");
 		}
 
-		if (A1 == "o" && A2 == "o" && A3 == "o"){
+		if (A1 == "O" && A2 == "O" && A3 == "O"){
 			alert("Player O Wins");
 		}
 
-		if (A4 == "x" && A5 == "x" && A6 == "x"){
+		if (A4 == "X" && A5 == "X" && A6 == "X"){
 			alert("Player X Wins");
 		}
 
-		if (A4 == "o" && A5 == "o" && A6 == "o"){
+		if (A4 == "O" && A5 == "O" && A6 == "O"){
 			alert("Player O Wins");
 		}
 
-		if (A7 == "x" && A8 == "x" && A9 == "x"){
+		if (A7 == "X" && A8 == "X" && A9 == "X"){
 			alert("Player X Wins");
 		}
 
-		if (A7 == "o" && A8 == "o" && A9 == "o"){
+		if (A7 == "O" && A8 == "O" && A9 == "O"){
 			alert("Player O Wins");
 		}
 
-		if (A1 == "x" && A4 == "x" && A7 == "x"){
+		if (A1 == "X" && A4 == "X" && A7 == "X"){
 			alert("Player X Wins");
 		}
 
-		if (A1 == "o" && A4 == "o" && A7 == "o"){
+		if (A1 == "O" && A4 == "O" && A7 == "O"){
 			alert("Player O Wins");
 		}
 
-		if (A2 == "x" && A5 == "x" && A8 == "x"){
+		if (A2 == "X" && A5 == "X" && A8 == "X"){
 			alert("Player X Wins");
 		}
 
-		if (A2 == "o" && A5 == "o" && A8 == "o"){
+		if (A2 == "O" && A5 == "O" && A8 == "O"){
 			alert("Player O Wins");
 		}
 
-		if (A3 == "x" && A6 == "x" && A9 == "x"){
+		if (A3 == "X" && A6 == "X" && A9 == "X"){
 			alert("Player X Wins");
 		}
 
-		if (A3 == "o" && A6 == "o" && A9 == "o"){
+		if (A3 == "O" && A6 == "O" && A9 == "O"){
 			alert("Player O Wins");
 		}
 
-		if (A1 == "x" && A5 == "x" && A9 == "x"){
+		if (A1 == "X" && A5 == "X" && A9 == "X"){
 			alert("Player X Wins");
 		}
 
-		if (A1 == "o" && A5 == "o" && A9 == "o"){
+		if (A1 == "O" && A5 == "O" && A9 == "O"){
 			alert("Player O Wins");
 		}
 
-		if (A3 == "x" && A5 == "x" && A7 == "x"){
+		if (A3 == "X" && A5 == "X" && A7 == "X"){
 			alert("Player X Wins");
 		}
 
-		if (A3 == "o" && A5 == "o" && A7 == "o"){
+		if (A3 == "O" && A5 == "O" && A7 == "O"){
 			alert("Player O Wins");
 		}
 	};
+
+// function catsGame () {
+
+// 	if 
+// }
 
 // Cats Game
 
 // if (determineWinner === true) {
 // 		(alert("Player x wins") || alert ("player o wins"))
 // 	} else { alert("This is a cats game")}
-  		
+  
+// var buttonCount = 0
+
+// 	function catsGame {
+
+// 		if (buttonCount===9) {
+
+// 			$()
+// 		}
+	
 
 
-//   // }
+// //   // }
 
 
  
